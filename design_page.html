@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>design</title>
+    <link rel="stylesheet" href="design_page_css/style_design_page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="header">
+    <img class="rocket_image" src="design_page_images/rocket.svg">
+    <div class="title_header">Accelerate your <br>business with our <br>design</div>
+    <div class="header_buttons">
+        <a class="header_button" id="mainLink" href="main_page.html">Main</a>
+        <a class="header_button" id="header_button_2" href="#first_anchor_link">Portfolio</a>
+        <a class="header_button" id="header_button_3" href="#second_anchor_link">Order now</a>
+    </div>
+</div>
+<div class="about_me">
+    <img class="image_me" src="design_page_images/huma_inner_cirlce.svg">
+    <div class="text_about_me"><span id="title_about_me">Creator</span><br>Meet Maxim, the design guru who turns your wildest ideas into reality! Take your project to a new level with its unique style and creativity.</div>
+</div>
+<div class="block_just_images" id="first_anchor_link">
+    <div class="title_just_images">Stunning works</div>
+    <div class="all_images">
+        <img src="design_page_images/all_images.svg">
+    </div>
+</div>
+<div class="reviews_from_people">
+    <div class="reviews_card">
+        <img class="human_inner_circle" src="design_page_images/human_reviews_1.svg">
+        <div class="comment">Maxim has exceeded all my expectations since the creation of the first project.</div>
+        <div class="name_human">Olga Smirnova</div>
+    </div>
+    <div class="reviews_card">
+        <img class="human_inner_circle" src="design_page_images/human_reviews_2.svg">
+        <div class="comment">I sincerely recommend using Maxim's services for your design needs!</div>
+        <div class="name_human_2">Mikhail Ivanov</div>
+    </div>
+    <div class="reviews_card">
+        <img class="human_inner_circle" src="design_page_images/human_reviews_3.svg">
+        <div class="comment">I will definitely come back again for the design from Maxim. Excellent service!</div>
+        <div class="name_human_3">Ekaterina Popova</div>
+    </div>
+</div>
+<div class="block_frequently_questions">
+    <div class="title_frequently_questions">Frequently Asked Questions</div>
+    <div class="block_all_text_frequently_questions">
+        <div class="text_frequently_questions_1"><span id="title_of_text_fq">How much does the design cost?</span><br><br>The price of the design depends on the complexity of the project and the deadlines. To discuss the details and get a preliminary estimate, contact me.</div>
+        <div class="text_frequently_questions_2"><span id="title_of_text_fq">What services <br>are offered?</span><br><br>I offer graphic design, web design, branding, illustrations and much more. I am ready to consider any design-related projects!</div>
+        <div class="text_frequently_questions_3"><span id="title_of_text_fq">What is the deadline?</span><br><br>The deadline depends on each specific project and its complexity. Don't be shy contact me to discuss the details.</div>
+    </div>
+</div>
+<div class="bottom" id="second_anchor_link">
+    <div class="text_bottom">Subscribe to the newsletter to <br>receive the latest news and <br>discounts!</div>
+    <a class="button_contact_me" id="mainLink" href="contact_me_page.html">Order design</a>
+</div>
+<div class="social_circles">
+    <div class="background_circle_telegram" onclick="redirect('https://t.me/W7R7R7U7S')">
+        <img class="telegram_logo" src="telegram_bot_images/telegram_logo.svg">
+    </div>
+    <div class="background_circle_vk" onclick="redirect('https://vk.com/id240081689')">
+        <img class="vk_logo" src="telegram_bot_images/vk_logo.svg">
+    </div>
+    <div class="background_circle_discord" onclick="redirect('https://discord.gg/5tstseR4')">
+        <img class="discord_logo" src="telegram_bot_images/discord_logo.svg">
+    </div>
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var mainLink = document.getElementById("mainLink");
+        mainLink.addEventListener("click", function(event) {
+            event.preventDefault();
+            var href = mainLink.getAttribute("href");
+            window.location.href = href;
+        });
+    });
+
+    function redirect(url) {
+        window.location.href = url;
+    }
+
+    document.querySelectorAll('.header_button').forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+</script>
+</body>
+</html>

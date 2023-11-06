@@ -1,0 +1,224 @@
+body {
+    background-color: black;
+    font-family: 'Fascinate Inline', sans-serif;
+}
+.header {
+    text-align: center;
+}
+.rocket_image {
+    margin: 5% 19% 0 0;
+    offset-path: path('M0.999816 52.461C0.499816 35.5 24.4997 0.999985 96.3041 0.999985C168.109 0.999985 243.483 103.851 318.741 103.851C394 103.851 421.5 72.422 421.5 52.461C421.5 32.5 391.5 0.999985 318.741 0.999985C245.983 0.999985 155 103.851 96.3041 103.851C37.6086 103.851 1.49982 69.422 0.999816 52.461Z');
+    animation: move 3s linear infinite;
+}
+@keyframes move {
+    100% {
+        offset-distance: 100%;
+    }
+}
+.title_header {
+    padding-top: 3%;
+    color: white;
+    font-size: 80px;
+    line-height: 1.1;
+}
+.header_buttons {
+    padding-top: 5%;
+}
+.header_button {
+    color: #F7FFF7;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 0.8% 1.1%;
+    border-radius: 4px;
+    margin: 0.2%;
+}
+#mainLink {
+    background-color: #424242;
+    color: white;
+    text-decoration: none;
+}
+#header_button_2 {
+    background-color: #797A9E;
+    color: white;
+    text-decoration: none;
+}
+#header_button_3 {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+.about_me {
+    display: flex;
+    padding: 16% 17%;
+}
+#title_about_me {
+    font-family: 'Fascinate Inline', sans-serif;
+    font-size: 48px;
+    color: #9893DA;
+    line-height: 1.8;
+}
+.text_about_me {
+    font-family: 'Inter', sans-serif;
+    color: white;
+    padding-left: 46%;
+    padding-right: 10%;
+    letter-spacing: 0.8px;
+    font-size: 20px;
+}
+.block_just_images {
+    padding:0 17% ;
+}
+.title_just_images {
+    color: white;
+    font-size: 48px;
+    padding-bottom: 4%;
+}
+.reviews_from_people {
+    padding: 15% 15%;
+    display: flex;
+}
+.reviews_card {
+    background-color: #0A0A0A;
+    border-radius: 15px;
+    font-family: 'Inter', sans-serif;
+    width: 320px;
+    margin-left: 2%;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.04);
+}
+.human_inner_circle {
+    padding: 11%;
+}
+.comment {
+    padding: 0 11%;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.name_human {
+    color: white;
+    font-size: 14px;
+    padding: 30% 11% 10% 11%;
+}
+.name_human_2 {
+    color: white;
+    font-size: 14px;
+    padding: 38% 11% 10% 11%;
+}
+.name_human_3 {
+    color: white;
+    font-size: 14px;
+    padding: 30% 11% 10% 11%;
+}
+.block_frequently_questions {
+    padding: 0 17%;
+}
+.title_frequently_questions {
+    color: #797A9E;
+    font-size: 48px;
+    padding-bottom: 6%;
+}
+.block_all_text_frequently_questions {
+    display: flex;
+}
+.text_frequently_questions_1 {
+    color: white;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    width: 270px;
+    margin-right: 8%;
+}
+#title_of_text_fq {
+    color: #BBBDF6;
+    font-weight: bold;
+    font-size: 20px;
+}
+.text_frequently_questions_2 {
+    color: white;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    width: 270px;
+    margin-right: 8%;
+}
+.text_frequently_questions_3 {
+    color: white;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    width: 270px;
+}
+.bottom {
+    text-align: center;
+    padding: 13% 17% 0 17%;
+}
+.text_bottom {
+    color: #BBBDF6;
+    font-size: 48px;
+    margin-bottom: 5%;
+}
+.button_contact_me {
+    color: white;
+    background-color: #7D7D7D;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    padding: 1% 2%;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+.button_contact_me:hover {
+    background-color: #151515;
+    color: #9893DA;
+}
+.social_circles {
+    display: flex;
+    padding: 3% 0;
+    justify-content: center;
+}
+.background_circle_telegram {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5%;
+    transition: 0.4s;
+}
+.background_circle_telegram:hover {
+    background-color: #00A3FF;
+}
+.background_circle_vk {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5%;
+    transition: 0.4s;
+}
+.background_circle_vk:hover {
+    background-color: #000AFF;
+}
+.background_circle_discord {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5%;
+    transition: 0.4s;
+}
+.background_circle_discord:hover {
+    background-color: #7B00F6;
+}
+.telegram_logo {
+    margin-right: 5%;
+}
+.discord_logo {
+    margin-right: 1.5%;
+}
